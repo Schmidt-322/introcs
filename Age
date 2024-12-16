@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Age{
+
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+
+        //Prompt user to enter their age
+        System.out.print(s:"Enter your age: ");
+        int age = scanner.nextInt();
+
+        //Compare age
+        System.out.print(s:"Enter a number to compare: ");
+        int number = scanner.nextInt();
+
+        if (number < age){
+            System.out.println(x:"Below your age.");
+        } else{
+            System.out.println(x:"Above your age.");
+        }
+        scanner.close();
+    }
+}
